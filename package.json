@@ -1,0 +1,19 @@
+{
+  "name": "secureu-note-taker",
+  "version": "1.0.0",
+  "description": "Note Taker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pranshu820/SECUREU-Note-Taker.git"
+  },
+  "author": "Pranshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pranshu820/SECUREU-Note-Taker/issues"
+  },
+  "homepage": "https://github.com/Pranshu820/SECUREU-Note-Taker#readme"
+}
