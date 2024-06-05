@@ -29,4 +29,12 @@ app.use(
 app.use(express.static("public"));
 app.use(cookieParser());
 
+import { router as authRouter } from "./routes/auth.route.js";
+import { router as notesRouter } from "./routes/notes.route.js";
+
+app.use(express.json());
+
+app.use("/api/auth", authRouter);
+app.use("/api/notes", notesRouter);
+
 export { app };

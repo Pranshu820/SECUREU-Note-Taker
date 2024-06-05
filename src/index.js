@@ -1,17 +1,8 @@
-import express from "express";
 import dotenv from "dotenv";
 import connectDB from "./config/db.js";
-import { router as authRouter } from "./routes/auth.route.js";
-import { router as notesRouter } from "./routes/notes.route.js";
+import { app } from "./app.js";
 
-dotenv.config();
-
-const app = express();
-
-app.use(express.json());
-
-app.use("/api/auth", authRouter);
-app.use("/api/notes", notesRouter);
+dotenv.config({ path: "./.env" });
 
 connectDB()
   .then(() => {
@@ -24,5 +15,3 @@ connectDB()
     console.log("MONGODB connection FAILED ", error);
     process.exit(1);
   });
-
-export { app };
